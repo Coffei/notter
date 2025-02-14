@@ -1,5 +1,7 @@
 # Notter
 
+<img src="logo.png" height="250px" alt="hand-drawn realistic image of otter taking notes"/>
+
 Simple note-taking application where you own your data.
 
 Main principles:
