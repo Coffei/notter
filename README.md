@@ -10,6 +10,8 @@ Main principles:
 - Serverless architecture - there is no backend, you decide where you want to store your data.
 - Simple - just the basics to get things done.
 
+You can test/use it yourself at https://coffei.github.io/notter.
+
 ## Where are the data stored?
 
 Currently data are stored locally in your browser. More comprehensive and fool-proof options will be added later.
