@@ -1,6 +1,6 @@
 import { reactive, watch } from "vue"
 
-export interface Note { id: string; title: string; text: string; }
+export interface Note { id: string; title: string; text: string; createdAt: number, updatedAt: number }
 
 // initialize notes from local storage
 const storedNotes: Note[] = JSON.parse(localStorage.getItem('notes') || '[]')
@@ -12,7 +12,8 @@ watch([notes], () => {
 })
 
 export const addNote = () => {
-    const newNote: Note = { id: crypto.randomUUID(), title: '', text: '' }
+    const now = new Date().getTime()
+    const newNote: Note = { id: crypto.randomUUID(), title: '', text: '', createdAt: now, updatedAt: now }
     notes.push(newNote)
     return newNote
 }
